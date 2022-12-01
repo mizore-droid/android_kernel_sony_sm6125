@@ -4449,6 +4449,7 @@ static struct platform_driver gcc_trinket_driver = {
 	.driver = {
 		.name = "gcc-trinket",
 		.of_match_table = gcc_trinket_match_table,
+		.probe_type = PROBE_FORCE_SYNCHRONOUS,
 	},
 };
 
